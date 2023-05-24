@@ -13,9 +13,9 @@ def vial(chemical, name, number, experiment):
 
 if __name__ == "__main__":
 
-    plan = input("Enter plan number: ")
+    plan = input("Enter experiment number: ")
     
-    with open("Silver Nitrate Experiment Plan " + plan + ".csv", 'w', newline='') as csvfile:
+    with open("AgNO3 Plan " + plan + ".csv", 'w', newline='') as csvfile:
         writer = csv.writer(csvfile, dialect='excel', delimiter=',')
 
         mass_initial = float(input(f"Enter starting mass of AgNO3 in grams: "))

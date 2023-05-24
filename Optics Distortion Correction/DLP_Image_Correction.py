@@ -75,9 +75,9 @@ if __name__ == "__main__":
     print(" 250x250 px and saves it as a 24-bit bitmap. Then, this deisng is")
     print(" selected as the file. Choose distortion and contrast values below.")
     print("***************** SAVE INFORMATION BELOW THIS LINE *****************")
-    file = input("Filename:  ")
+    file = input("Filename without extension:  ")
     #try:
-    original_image = cv.imread(file)
+    original_image = cv.imread(file + ".bmp")
     image = make_background(original_image)
     #except:
     #    print("There was an error importing the image, please try again.")
@@ -102,8 +102,9 @@ if __name__ == "__main__":
     print("Width:   ", w, "px  \t", scaled_w, "px")
     print("Scale H: ", 1, "    \t", scale_y)
     print("Scale W: ", 1, "    \t", scale_x)
-    # save the result
+    # save the result plus original in PNG format
     cv.imwrite(file + '_corrected.bmp', final_image)
+    cv.imwrite(file + '.png', original_image)
 
     # show the result
     cv.imshow('Original', original_image)

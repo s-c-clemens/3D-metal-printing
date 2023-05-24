@@ -1,0 +1,12 @@
+Experiment,1,Remaining Mass [g]:,1.0
+Vial,Chemical,Molarity [mM],Mass [g],Water added [mL]
+1,AgNO3,100.0,0.0639,3.762
+2,NaCit,100.0,0.2236,7.603
+3,Allylamine,1.0 M,0.75 mL,9.25
+3a,PAAM,-,5.7 mg Irg,-
+Precursor,Vial 1 [uL],Vial 2 [uL],Vial 3a [uL],DI Water [uL],Total [uL]
+ ,80.0,60.0,16.0,844.0,1000.0
+AgNO3 [mM],NaCit [mM],PAAM [mM]
+8.0,6.0,16.0
+ 
+Experiment,2,Remaining Mass [g]:,0.936
