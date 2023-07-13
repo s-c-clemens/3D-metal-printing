@@ -1,0 +1,4 @@
+-find effective pixel size for new printer setup
+-
+-find desired correction
+-potentially move original printing setup to be next to new printer?
